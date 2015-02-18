@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20150218 12:16:52.668" generator="Robot 2.8.7 (Python 2.7.5 on darwin)">
+<suite source="/Users/vijeta.b/Desktop/Apigee_test_Calculator/keyword_driven.txt" id="s1" name="Keyword Driven">
+<test id="s1-t1" name="Push button">
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.721" starttime="20150218 12:16:52.720"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Result Should Be">
+<doc>Verifies that the current result is `expected`.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.721" starttime="20150218 12:16:52.721"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20150218 12:16:52.721" critical="yes" starttime="20150218 12:16:52.719"></status>
+</test>
+<test id="s1-t2" name="Push multiple buttons">
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.723" starttime="20150218 12:16:52.723"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.723" starttime="20150218 12:16:52.723"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Result Should Be">
+<doc>Verifies that the current result is `expected`.</doc>
+<arguments>
+<arg>12</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.724" starttime="20150218 12:16:52.724"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20150218 12:16:52.724" critical="yes" starttime="20150218 12:16:52.722"></status>
+</test>
+<test id="s1-t3" name="Simple calculation">
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.726" starttime="20150218 12:16:52.725"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>+</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.726" starttime="20150218 12:16:52.726"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.726" starttime="20150218 12:16:52.726"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>=</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.727" starttime="20150218 12:16:52.727"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Result Should Be">
+<doc>Verifies that the current result is `expected`.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.727" starttime="20150218 12:16:52.727"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20150218 12:16:52.728" critical="yes" starttime="20150218 12:16:52.724"></status>
+</test>
+<test id="s1-t4" name="Multiplication calculations">
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.729" starttime="20150218 12:16:52.729"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>*</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.730" starttime="20150218 12:16:52.729"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.730" starttime="20150218 12:16:52.730"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>=</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.731" starttime="20150218 12:16:52.730"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Result Should Be">
+<doc>Verifies that the current result is `expected`.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.731" starttime="20150218 12:16:52.731"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20150218 12:16:52.731" critical="yes" starttime="20150218 12:16:52.728"></status>
+</test>
+<test id="s1-t5" name="Longer calculation">
+<kw type="kw" name="CalculatorLibrary.Push Buttons">
+<doc>Pushes the specified `buttons`.</doc>
+<arguments>
+<arg>5 + 4 - 3 * 2 / 1 =</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.733" starttime="20150218 12:16:52.732"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Result Should Be">
+<doc>Verifies that the current result is `expected`.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.733" starttime="20150218 12:16:52.733"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20150218 12:16:52.734" critical="yes" starttime="20150218 12:16:52.732"></status>
+</test>
+<test id="s1-t6" name="Failure calculation">
+<kw type="kw" name="CalculatorLibrary.Push Buttons">
+<doc>Pushes the specified `buttons`.</doc>
+<arguments>
+<arg>2 - 2 =</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.735" starttime="20150218 12:16:52.735"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Result Should Be">
+<doc>Verifies that the current result is `expected`.</doc>
+<arguments>
+<arg>0</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.735" starttime="20150218 12:16:52.735"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20150218 12:16:52.736" critical="yes" starttime="20150218 12:16:52.734"></status>
+</test>
+<test id="s1-t7" name="Division by zero error">
+<kw type="kw" name="CalculatorLibrary.Push Buttons">
+<doc>Pushes the specified `buttons`.</doc>
+<arguments>
+<arg>2/0</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.737" starttime="20150218 12:16:52.737"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>=</arg>
+</arguments>
+<msg timestamp="20150218 12:16:52.739" level="FAIL">CalculationError: Division by zero.</msg>
+<status status="FAIL" endtime="20150218 12:16:52.739" starttime="20150218 12:16:52.737"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150218 12:16:52.739" critical="yes" starttime="20150218 12:16:52.736">CalculationError: Division by zero.</status>
+</test>
+<test id="s1-t8" name="Negative subtraction error">
+<kw type="kw" name="CalculatorLibrary.Push Buttons">
+<doc>Pushes the specified `buttons`.</doc>
+<arguments>
+<arg>3 - 99 =</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.741" starttime="20150218 12:16:52.740"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Result Should Be">
+<doc>Verifies that the current result is `expected`.</doc>
+<arguments>
+<arg>-96</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.741" starttime="20150218 12:16:52.741"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20150218 12:16:52.742" critical="yes" starttime="20150218 12:16:52.740"></status>
+</test>
+<test id="s1-t9" name="Argument calculation error">
+<kw type="kw" name="CalculatorLibrary.Push Buttons">
+<doc>Pushes the specified `buttons`.</doc>
+<arguments>
+<arg>C + C =</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.743" starttime="20150218 12:16:52.743"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Result Should Be">
+<doc>Verifies that the current result is `expected`.</doc>
+<arguments>
+<arg>0</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.744" starttime="20150218 12:16:52.743"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20150218 12:16:52.744" critical="yes" starttime="20150218 12:16:52.742"></status>
+</test>
+<test id="s1-t10" name="On the Fly data test">
+<kw type="kw" name="CalculatorLibrary.Push Buttons Data">
+<doc>Pushes the buttons but the data is created on the fly, not taken from any file</doc>
+<arguments>
+</arguments>
+<msg timestamp="20150218 12:16:52.745" level="INFO">6
+4
+*
+24
+24</msg>
+<status status="PASS" endtime="20150218 12:16:52.745" starttime="20150218 12:16:52.745"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20150218 12:16:52.746" critical="yes" starttime="20150218 12:16:52.744"></status>
+</test>
+<test id="s1-t11" name="Clear">
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.747" starttime="20150218 12:16:52.747"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>C</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.747" starttime="20150218 12:16:52.747"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Result Should Be">
+<doc>Verifies that the current result is `expected`.</doc>
+<arguments>
+<arg>0</arg>
+</arguments>
+<status status="PASS" endtime="20150218 12:16:52.748" starttime="20150218 12:16:52.748"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20150218 12:16:52.748" critical="yes" starttime="20150218 12:16:52.746"></status>
+</test>
+<doc>Test cases using the keyword-driven testing approach.
+
+All tests contain a workflow constructed from keywords in
+`CalculatorLibrary`.</doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150218 12:16:52.749" starttime="20150218 12:16:52.669"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="10">Critical Tests</stat>
+<stat fail="1" pass="10">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" pass="10" id="s1" name="Keyword Driven">Keyword Driven</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

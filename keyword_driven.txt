@@ -1,0 +1,60 @@
+*** Settings ***
+Documentation     Test cases using the keyword-driven testing approach.
+...
+...               All tests contain a workflow constructed from keywords in
+...               `CalculatorLibrary`.
+Library           CalculatorLibrary
+
+*** Test Cases ***
+Push button
+    Push button    1
+    Result should be    1
+
+Push multiple buttons
+    Push button    1
+    Push button    2
+    Result should be    12
+
+Simple calculation
+    Push button    1
+    Push button    +
+    Push button    2
+    Push button    =
+    Result should be    3
+	
+Multiplication calculations
+    Push Button    2
+    Push Button    *
+    Push Button    2
+    Push Button    =	
+    Result should be    4
+
+
+Longer calculation
+    Push buttons    5 + 4 - 3 * 2 / 1 =
+    Result should be    3
+
+Failure calculation
+    Push Buttons    2 - 2 =
+    Result should be  0
+
+Division by zero error
+	Push Buttons    2/0	
+	Push Button 	=
+	Result should be  ${ERROR} 
+	
+Negative subtraction error
+	Push Buttons  3 - 99 =
+    Result should be  -96
+	
+Argument calculation error	
+	Push Buttons  C + C =
+	Result should be  0
+	
+On the Fly data test
+	Push Buttons Data
+
+Clear
+    Push button    1
+    Push button    C
+    Result should be   0 
